@@ -21,6 +21,23 @@ class quotes {
 				'search' => array('/“|"/', '/\'/'),
 				'replace' => array('”', '’'),
 			),
+		  'fr' => array(
+				'search' => array('/(")(.*)(")/U', '/\'/'),
+				'replace' => array('«$2»', '’'),
+			),
+		  'en' => array(
+				'search' => array('/(")(.*)(")/U', '/\'/'),
+				'replace' => array('“$2”', '’'),
+			),
+		  'de' => array(
+				'search' => array('/(")(.*)(")/U', '/\'/'),
+				'replace' => array('„$2“', '’'),
+			),
+		  'es' => array(
+				'search' => array('/(")(.*)(")/U', '/\'/'),
+				'replace' => array('«$2»', '’'),
+			),
+		  
 		);
 		$pattern = isset($language2pattern[strtolower($languageCode)]) ? $language2pattern[strtolower($languageCode)] : $language2pattern[$this->defaultLanguage];
 		$this->search = $pattern['search'];
