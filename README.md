@@ -1,5 +1,5 @@
 # quotemarks
-Replace quotes according best language practices but leaves HTML markup untouched
+Replace quotes according to language practices but leaves HTML markup untouched
 
 ###Example
 ```
